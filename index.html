@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your GitHub Pages</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+  <h1>Welcome to GitHub Pages!</h1>
+
+  <script>
+    // Replace 'YOUR_FLASK_API_URL' with the actual URL of your Flask app
+    const flaskApiUrl = 'YOUR_FLASK_API_URL';
+
+    // Example: Redirect a GET request
+    $.get(flaskApiUrl, function (data) {
+      console.log('GET Response:', data);
+    });
+
+    // Example: Redirect a POST request with data
+    const postData = { key: 'value' };
+    $.post(flaskApiUrl, postData, function (data) {
+      console.log('POST Response:', data);
+    });
+  </script>
+
+</body>
+</html>
